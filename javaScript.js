@@ -44,10 +44,14 @@ function playGame(){
     playRound(getHumanChoice(),getComputerChoice());
 
     if(humanScore===computerScore)
-        {console.log(`It's a tie!`);
+        {alert(`YOU GUYS ARE EQUAL`);
     } else if(humanScore>computerScore)
-        {console.log(`You win!`)
-    } else console.log('You lose!')
+        {alert(`YOU WIN ${humanScore} TIMES`)
+    } else alert(`YOU LOSE!But don't worry,this is not a real game.`)
+
+
+    
 }
 playGame();
+
 
